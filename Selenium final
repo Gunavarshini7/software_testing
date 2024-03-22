@@ -1,0 +1,20 @@
+package myyy;
+import java.awt.Desktop;
+import java.net.URI;
+
+
+public class myweb {
+		    public static void main(String[] args) {
+		        try {
+		            // Specify the URL of the website you want to open
+		            String url = "https://arms.sse.saveetha.com/StudentPortal/Landing.aspx";
+		            
+		            // Open the website URL in the default browser
+		            Desktop.getDesktop().browse(new URI(url));
+		        } catch (Exception e) {
+		            e.printStackTrace();
+		        }
+		    }
+
+
+	}
