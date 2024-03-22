@@ -1,0 +1,189 @@
+how to run a selenium program in eclipse ide
+
+1. Selenium Server
+
+Type Selenium Org and select Selenium
+
+Click on Downloads
+
+Select Selenium Server (Grid )  click on Latest Stable version 4.18.1
+
+Server Jar file will be downloaded
+
+
+
+2. Selenium Client
+
+Select and click Selenium Java Stable 4.18.1 
+
+Selenium Java Zip file downloaded
+
+https://www.youtube.com/watch?v=sPGn11JAeyY 
+
+
+
+3. Configuration
+
+Create a folder Selenium Webdriver in C Drive
+
+Copy Server jar file and Client Selenium Java files.
+
+
+
+4. Install Browser Driver
+
+Type chrome Driver in Google
+
+Select Chrome Driver - Webdriver for Chrome
+
+To check the version select … dotted symbol  help about Google Chrome
+
+You can see the latest version of Chrome as 
+
+Chrome is up to date
+
+Version 122.0.6261.129 (Official Build) (64-bit)
+
+
+
+Selenium web driver for java (Stable release 103.0.5060.134)
+
+
+
+The same version Chrome Driver should be installed
+
+Select and click Chrome for testing availability dashboard on Latest Cromedriver Binaries
+
+On the Stable Channel select the correct version Chromedriver Stable
+
+Here 
+
+chromedriver	win64	https://storage.googleapis.com/chrome-for-testing-public/122.0.6261.128/win64/chromedriver-win64.zip	200
+
+
+
+Copy and download the file.
+
+Copy the extracted fil.
+
+Create a folder “ChromeDriver” under C:\Webdriver”
+
+Paste the extracted file.
+
+//////
+
+
+
+Open Eclipse
+
+New project 
+
+Project nameSeleniumDemo1
+
+Execution environment - latest Java version  JavaSE-17
+
+Finish
+
+
+
+Then create a Package
+
+Select SeleniumDemo1New  Package  Type the package name (Edu)
+
+
+
+Then create a class
+
+Select src  New Class  Type Selenium Script
+
+Make sure Public and public static void main is selected for class
+
+
+
+Before execution
+
+Attach the necessary jar files
+
+Select src  Build Path Configure Build path  Libraries  Add external Jars  Apply and Close
+
+Locate jar file from C:\webdriverSelenium-server-4.18.1
+
+Start to write code
+
+
+
+package Edu;
+
+import org.openqa.selenium.WebDriver;
+
+public class SeleniumScript {
+
+
+
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.Chrome.Driver", "C:\\Webdriver\\chromedriver\\chromedriver-win32");
+
+		//Webdriver driver = new ChromeDriver();		
+
+		ChromeDriver driver = new ChromeDriver();		
+
+driver.get(http://google.com);
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+}
+
+
+
+
+
+How to Setup Selenium WebDriver in Eclipse IDE
+
+https://www.youtube.com/watch?v=FVwSjBXb20o - Recommended
+
+https://www.youtube.com/watch?v=sPGn11JAeyY - Recommended
+
+https://www.youtube.com/watch?v=0_dsqtXFZic
+
+
+
+Needed Software for Software Testing
+
+1. JAVASE - JDK
+
+2. Eclipse 
+
+3. Selenium Server (it is a jar file)
+
+https://www.selenium.dev/downloads/
+
+Selenium Server (Grid )  click and download Latest Stable version 4.18.1
+
+4. Selenium Client (it is a folder - selenium-java-4.18.1)
+
+https://www.selenium.dev/downloads/
+
+Selenium Clients and WebDriver Language Bindings  Click on Java Stable
+
+5. Select Chrome Driver - Webdriver for Chrome
+
+https://chromedriver.chromium.org/downloads 
+
+Check Chrome Version and download the Chrome driver
+
+
+
+Note: For 2, 3 and 4, Create a folder in C drive and keep all downloaded files and folder in that folder.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
